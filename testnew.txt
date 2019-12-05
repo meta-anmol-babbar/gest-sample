@@ -1,0 +1,19 @@
+WorkingDayCalculationTest  ..
+
+StudentNameTest  ..
+
+SObjListTest  ..
+
+UpdateOpportunityTest ..
+
+ContactIdsTest  ..
+
+MailOpptyOwnertest  ..
+
+TeacherIncertConditionTest  ..
+
+ClassDeleteNotAllowedTest
+
+OpportunityStageChangeTest  ..
+
+StudentTriggersTest
