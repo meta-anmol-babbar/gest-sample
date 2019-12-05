@@ -1,0 +1,21 @@
+{!RequireScript("/soap/ajax/39.0/connection.js")}
+
+
+var recordsSelected = {!GetRecordIds($ObjectType.Student__c)}
+var listOfRecords =[];
+for(var i=0; i < recordsSelected .length ; i++) {
+recordIds.push(value.Id);
+}
+if(listOfRecords.length == 0){
+alert('No records selected');
+}
+else{
+var win = window.open("/apex/DeleteSelectedStudentPage", "StudentDel", "height=500,width=500");
+alert('Selected ID '+listOfRecords);
+}
+function delecteStudents()
+    {
+        sforce.Connection.sessionId = '{$API.Session_Id}';
+        sforce.connection.deleteIds(listOfRecords);
+	window.location.reload();
+    }
